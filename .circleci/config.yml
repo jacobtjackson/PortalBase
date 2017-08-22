@@ -28,8 +28,8 @@ jobs:
       # Database setup
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load
-        environment:
-          DATABASE_URL: "postgres://ubuntu@localhost:5432/portalbase_test"
+          environment:
+            DATABASE_URL: "postgres://ubuntu@localhost:5432/portalbase_test"
 
 
       # Run rspec in parallel
