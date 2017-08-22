@@ -5,7 +5,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/PortalBase
+    working_directory: ~/portalbase_development
     docker:
       - image: circleci/ruby:2.4.1-node
       - image: circleci/postgres:9.4.12-alpine
