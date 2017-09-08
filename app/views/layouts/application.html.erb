@@ -9,8 +9,30 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">PortalBase</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><%= link_to "Home", landing_index_path %></li>
+            <li>
+              <% if current_user.present? %>
+                <%= link_to 'Sign Out', logout_path, method: :delete, id: 'sign-out' %>
+              <% else %>
+                <%= link_to "Login", login_path %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <% flash.each do |message_type, message| %>
+          <%= javascript_tag "Materialize.toast('#{message}', 4000)" %>
+      <% end %>
+      <section id="yield">
+        <%= yield %>
+      </section>
+    </main>
   </body>
 </html>

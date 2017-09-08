@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+ @import "materialize";
+
+
+ // Scalable and Modular Architecture for CSS (SMACSS) - https://smacss.com/
+@import "style";
+@import "base";
+@import "layout";
+@import "module";
+@import "state";
+@import "theme";
