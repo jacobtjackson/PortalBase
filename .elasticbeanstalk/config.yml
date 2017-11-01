@@ -1,0 +1,19 @@
+branch-defaults:
+  master:
+    environment: null
+  remove-capistrano:
+    environment: production
+global:
+  application_name: PortalBase
+  branch: null
+  default_ec2_keyname: aws-eb
+  default_platform: Ruby 2.4 (Puma)
+  default_region: us-east-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  repository: null
+  sc: git
+  workspace_type: Application
