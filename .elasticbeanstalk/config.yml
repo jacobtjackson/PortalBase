@@ -1,4 +1,6 @@
 branch-defaults:
+  Production:
+    environment: production
   master:
     environment: null
   remove-capistrano:
