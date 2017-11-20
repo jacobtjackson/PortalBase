@@ -17,6 +17,9 @@
 !/log/.keep
 !/tmp/.keep
 
+# Ignore application configuration
+/config/application.yml
+
 # Ignore Byebug command history file.
 .byebug_history
 
@@ -24,4 +27,3 @@
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
-/config/application.yml
