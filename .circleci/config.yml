@@ -16,7 +16,7 @@ jobs:
       - image: circleci/postgres:9.5-alpine
         environment:
           POSTGRES_USER: portalbase-ruby
-          POSTGRES_DB: rails_blog
+          POSTGRES_DB: portalbase_test
           POSTGRES_PASSWORD: ""
     steps:
       - checkout
