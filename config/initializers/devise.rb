@@ -254,7 +254,8 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   config.omniauth :google_oauth2, ENV['google_id'], ENV['google_secret']
-  config.omniauth :coinbase, ENV['coinbase_id'], ENV['coinbase-secret']
+
+  OmniAuth.config.logger = Rails.logger if Rails.env.development?
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
