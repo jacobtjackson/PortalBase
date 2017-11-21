@@ -9,6 +9,8 @@ Rails.application.routes.draw do
     delete "/logout" => "devise/sessions#destroy"
   end
 
+  resources :users, only: [:show]
+
   resources :landing
   root to: "landing#index"
 end
