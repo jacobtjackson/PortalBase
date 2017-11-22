@@ -1,6 +1,41 @@
-<div class="row landing">
-  <h1 class="center-align">Welcome To PortalBase</h1>
-  <div class="col s12">
-    
+<div id="landing-page" class="row">
+  <div id="splash" class="indigo darken-2">
+    <div id="splash-container" class="section container">
+      <h3 id="call-to-action">Handle Your Bills With Cryptocurrency</h2>
+      <%= link_to "Learn More", about_path, class: "waves-effect waves-light btn" %>
+    </div>
+  </div>
+
+  <div id="hero" class="row container section">
+    <div class="col s4">
+      <div class="card hoverable">
+        <div class="card-content">
+          <%= material_icon.credit_card.md_48 %>
+          <span class="card-title">Pay Your Bills</span>
+          <p>Pay your bills with cryptocurrency, no conversion necessary</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s4">
+      <div class="card hoverable">
+        <div class="card-content">
+          <%= material_icon.local_atm.md_48 %>
+          <span class="card-title">Convert Paychecks</span>
+          <p>Get your paychecks converted to cryptocurrency automatically</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s4">
+      <div class="card hoverable">
+        <div class="card-content">
+          <%= material_icon.autorenew.md_48 %>
+          <span class="card-title">Recurring Payments</span>
+          <p>Set up recurring payments quickly and easily</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="ico" class="row container section">
   </div>
 </div>

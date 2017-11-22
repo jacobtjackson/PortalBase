@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   resources :users, only: [:show]
 
   resources :landing
+  get "/about" => "landing#about"
   root to: "landing#index"
 end
