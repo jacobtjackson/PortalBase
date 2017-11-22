@@ -1,3 +1,27 @@
 .main {
   margin-top: 50px;
 }
+
+.section {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+#landing-page {
+  #splash {
+    #splash-container {
+      max-width: 500px;
+    }
+  }
+
+  #hero {
+    .card {
+      margin: 0 auto;
+      height: 225px;
+      width: 80%;
+      .card-content {
+        text-align: center;
+      }
+    }
+  }
+}
